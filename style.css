@@ -27,10 +27,15 @@ body{
     background-color: #eee;
 }
 .container{
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 }
-
+.heading h2{
+    font-size: 40px;
+    color: #3A3A3A;
+    text-align: center;
+    margin: 60px 0;
+}
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-
             header css
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
@@ -100,10 +105,11 @@ body{
 .influence-banner-content{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
 }
 .influence-banner-text{
-    min-width: 45%;
+    width: 45%;
 }
 .influence-banner-text h1{
     font-size: 52px;
@@ -130,4 +136,323 @@ body{
 }
 .influence-banner-image{
     min-width: 45%;
+}
+/* .influence-banner-image img{ 
+    min-width: 70%;
+} */
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-
+            logos css
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+.logos-section{
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+.menu-logos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(0,0,0,.1);
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.logos-image{
+    width: 13%;
+    padding: 20px 0;
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-
+        popular-section css
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+.Popular-Collection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.popular-items{
+    width: 30%;
+    border: 10px solid #fff;
+    box-shadow: 0 .5rem 16px rgba(0,0,0,.1);
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.popular-items .poular-image{
+    height: 18rem;
+    overflow: hidden;
+    width: 100%;
+    
+}
+.popular-items .poular-image img{
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+.items-title h3{
+    font-size: 30px;
+    padding: 20px 0;
+}
+.items-title p{
+    font-size: 25px;
+}
+.item-rateing{
+    padding: 15px 0;
+}
+.item-rateing i{
+    color: #f1c40f;
+}
+.item-rateing span{
+    margin-left: 15px;
+    font-size: 15px;
+    font-weight: 700;
+}
+.items-description{
+    margin-bottom: 10px;
+}
+.items-description p{
+    color: #3A3A3A;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-
+        Our blogs section css
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+.blog-more-link{
+    text-align: end;
+    transition: .2s;
+}
+.blog-more-link:hover{
+    letter-spacing: 2px;
+}
+.blog-more-link a,
+.blog-more-link i{
+    color: #E02C6D;
+    font-size: 20px;
+    font-weight: 700;
+}
+.my-blogs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.blogs-box{
+    width: 30%;
+    border: 8px solid #fff;
+    box-shadow: 0 .5rem 16px rgba(0,0,0,.1);
+}
+.blogs-box .image{
+    height: 20rem;
+    overflow: hidden;
+    width: 100%;
+}
+.blogs-box .image img{
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    transition: .3s;
+}
+.blogs-box:hover .image img{
+    transform: scale(1.2);
+}
+.blogs-title h3{
+    font-size: 30px;
+    padding: 10px 0;
+}
+.blog-description p{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.blog-link a{
+    padding: 10px 40px;
+    background-color: #E02C6D;
+    margin-bottom: 20px;
+    display: inline-block;
+    color: #fff;
+    transition: .3s;
+}
+.blog-link a:hover{
+    border-radius: 40px 10px 50px 10px;
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-
+        footer section css
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+.footer-section{
+    background-color: #0A0826;
+    padding: 40px;
+    margin-top: 100px;
+}
+.footer-content{
+    text-align: center;
+    color: #fff;
+}
+.footer-heading h3{
+    font-size: 30px;
+    padding: 10px;
+}
+.lives-easier-copy-right{
+    font-size: 20px;
+}
+.reserved{
+    font-size: 20px;
+    padding: 10px;  
+}
+.reserved span{
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+    color: #27ae60;
+}
+.footer-section .share{
+    padding:1rem 0;
+}
+.footer-section .share a i{
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    font-size: 2rem;
+    color:#fff;
+    border: .1rem solid rgba(255,255,255,.3);
+    margin:.3rem;
+    border-radius: 50%;
+}
+.footer-section .share a i:hover{
+    background-color: #ff5200;
+}
+
+
+
+
+
+
+
+
+/* --------------------------midia Qurie------------------------- */
+@media (max-width:991px){
+    .menu-bars{
+        display: block;
+    }
+    .influence-menu-items ul li a{
+        display: none;
+    }
+    .influence-banner-text{
+        min-width: 100%;
+    }
+    .influence-banner-image{
+        margin-bottom: -150px;
+        margin-top: 90px;
+        min-width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+    .influence-banner-image img{
+        min-width: 90%;
+
+    }
+    .blogs-box{
+        width: 45%;
+        margin-bottom: 20px;
+    }
+    .popular-items{
+        width: 45%;
+    }
+    .last-blog-box{
+        width: 100%;
+    }
+    .blogs-box .image{
+        height: 25rem;
+        overflow: hidden;
+        width: 100%;
+    }
+    
+}
+
+
+@media (max-width:768px){
+    .influence-logo a{
+        font-size: 20px;
+    }
+    .influence-banner-text h1{
+        font-size: 35px;
+    }
+    .logos-image{
+        width: 30%;
+    }
+    .logos-image img{
+        width: 70%;
+    }
+    .popular-items{
+        width: 45%;
+    }
+    .blogs-box{
+        width: 45%;
+    }
+    .influence-banner-text{
+        min-width: 100%;
+    }
+    .influence-banner-image{
+        margin-top: 80px;
+        margin-bottom: 20px;
+        min-width: 80%;
+    }
+    .influence-banner-image img{
+        width: 70%;
+    }
+    .logos-section{
+        margin-top: 50px;
+    }
+    .blogs-box{
+        margin-bottom: 20px;
+    }
+    .last-blog-box{
+        width: 100%;
+    }
+    .last-prpular-items{
+        width: 100%;
+    }
+}
+
+
+
+
+
+@media (max-width:500px){
+    .menu-bars{
+        font-size: 12px;
+    }
+    .search-icon a, 
+    .shopping-icon a{
+    margin-right: 10px;
+}
+    .banner-section{
+        margin-top: 20px;
+    }
+    .logos-section{
+        margin-bottom: 30px;
+    }
+    .influence-logo a{
+        font-size: 16px;
+    }
+    .influence-banner-text h1{
+        font-size: 35px;
+    }
+    .influence-banner-image{
+        margin-top: 50px;
+        min-width: 100%;
+    }
+    .influence-banner-image img{
+        width: 80%;
+    }
+    .popular-items{
+        width: 100%;
+    }    
+    .blogs-box{
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
